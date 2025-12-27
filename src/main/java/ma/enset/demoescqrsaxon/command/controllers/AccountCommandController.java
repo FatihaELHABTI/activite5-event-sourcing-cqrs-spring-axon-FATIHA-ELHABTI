@@ -2,7 +2,13 @@ package ma.enset.demoescqrsaxon.command.controllers;
 
 import ma.enset.demoescqrsaxon.command.aggregates.AccountAggregate;
 import ma.enset.demoescqrsaxon.command.commands.CreateAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.CreditAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.DebitAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.UpdateAccountStatusCommand;
 import ma.enset.demoescqrsaxon.commons.dtos.CreateAccountDTO;
+import ma.enset.demoescqrsaxon.commons.dtos.CreditAccountDTO;
+import ma.enset.demoescqrsaxon.commons.dtos.DebitAccountDTO;
+import ma.enset.demoescqrsaxon.commons.dtos.UpdateAccountStatusDTO;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.eventsourcing.eventstore.EventStore;
 import org.springframework.web.bind.annotation.*;

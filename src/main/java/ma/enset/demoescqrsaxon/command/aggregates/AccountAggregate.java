@@ -8,6 +8,15 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
+import ma.enset.demoescqrsaxon.command.commands.CreateAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.CreditAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.DebitAccountCommand;
+import ma.enset.demoescqrsaxon.command.commands.UpdateAccountStatusCommand;
+import ma.enset.demoescqrsaxon.commons.enums.AccountStatus;
+import ma.enset.demoescqrsaxon.commons.events.AccountCreatedEvent;
+import ma.enset.demoescqrsaxon.commons.events.AccountCreditedEvent;
+import ma.enset.demoescqrsaxon.commons.events.AccountDebitedEvent;
+import ma.enset.demoescqrsaxon.commons.events.AccountStatusUpdatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
