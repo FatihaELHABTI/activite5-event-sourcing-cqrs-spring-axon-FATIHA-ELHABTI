@@ -1,7 +1,7 @@
 package ma.enset.demoescqrsaxon.commons.dtos;
 
 import lombok.*;
-import ma.enset.demoescqrsaxon.query.queries.OperationType;
+import ma.enset.demoescqrsaxon.query.entities.OperationType;
 
 
 import java.time.Instant;

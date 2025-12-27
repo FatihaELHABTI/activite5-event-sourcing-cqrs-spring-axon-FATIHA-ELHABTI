@@ -1,4 +1,4 @@
-package ma.enset.demoescqrsaxon.query.queries;
+package ma.enset.demoescqrsaxon.query.entities;
 
 public enum OperationType {
     DEBIT, CREDIT
